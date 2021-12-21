@@ -14,7 +14,9 @@
   ],
   "scripts": {
     "test": "nyc mocha --async-only --check-leaks && eslint . --ignore-path .gitignore",
-    "doc": "jsdoc2md *.js lib/*.js | replace-between --target README.md --token API"
+    "doc": "jsdoc2md *.js lib/*.js | replace-between --target README.md --token API",
+    "release": "standard-version --release-as patch -a -t \"v\" && git push --follow-tags origin main",
+    "release:minor": "standard-version --release-as minor -a -t \"v\" && git push --follow-tags origin main"
   },
   "keywords": [
     "utility",
@@ -25,9 +27,11 @@
   "license": "MIT",
   "dependencies": {
     "@babel/eslint-parser": "^7.16.5",
+    "@dnb-org/standard-version-config": "^3.4.3",
     "chalk": "^5.x",
     "fs-extra": "^10.x",
     "get-stdin": "^9.x",
+    "replace-between": "github:dnb-org/replace-between",
     "yargonaut": "^1.x",
     "yargs": "^17.x"
   },
