@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/ozum/replace-between/compare/v0.0.9...v0.0.10) (2021-12-21)
+
+
+### Bug Fixes
+
+* remove hugo calls from release scripts ([64ba18b](https://github.com/ozum/replace-between/commit/64ba18bd3da063cfbeb2a56a58e0e8fecad8f10d))
+
 ### [0.0.9](https://github.com/ozum/replace-between/compare/v0.0.8...v0.0.9) (2021-12-21)
 
 
